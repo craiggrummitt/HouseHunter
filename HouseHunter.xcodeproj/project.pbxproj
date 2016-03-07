@@ -7,13 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B95537D11C8DF522005FE7EC /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95537D01C8DF522005FE7EC /* MapViewController.swift */; };
 		B9EA1FBD1C84AD2000562C58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EA1FBC1C84AD2000562C58 /* AppDelegate.swift */; };
-		B9EA1FBF1C84AD2000562C58 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EA1FBE1C84AD2000562C58 /* ViewController.swift */; };
 		B9EA1FC21C84AD2000562C58 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9EA1FC01C84AD2000562C58 /* Main.storyboard */; };
 		B9EA1FC41C84AD2000562C58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9EA1FC31C84AD2000562C58 /* Assets.xcassets */; };
 		B9EA1FC71C84AD2000562C58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9EA1FC51C84AD2000562C58 /* LaunchScreen.storyboard */; };
 		B9EA1FD21C84AD2000562C58 /* HouseHunterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EA1FD11C84AD2000562C58 /* HouseHunterTests.swift */; };
 		B9EA1FDD1C84AD2000562C58 /* HouseHunterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EA1FDC1C84AD2000562C58 /* HouseHunterUITests.swift */; };
+		B9EA1FED1C84E10200562C58 /* HomeDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EA1FEC1C84E10200562C58 /* HomeDetailTableViewController.swift */; };
+		B9EA1FEF1C84E23F00562C58 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EA1FEE1C84E23F00562C58 /* Home.swift */; };
+		B9EA1FF11C84E4C000562C58 /* HomeHunterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EA1FF01C84E4C000562C58 /* HomeHunterTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B95537D01C8DF522005FE7EC /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		B9EA1FB91C84AD2000562C58 /* HouseHunter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HouseHunter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9EA1FBC1C84AD2000562C58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B9EA1FBE1C84AD2000562C58 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B9EA1FC11C84AD2000562C58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B9EA1FC31C84AD2000562C58 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B9EA1FC61C84AD2000562C58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +50,9 @@
 		B9EA1FD81C84AD2000562C58 /* HouseHunterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HouseHunterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9EA1FDC1C84AD2000562C58 /* HouseHunterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseHunterUITests.swift; sourceTree = "<group>"; };
 		B9EA1FDE1C84AD2000562C58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9EA1FEC1C84E10200562C58 /* HomeDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeDetailTableViewController.swift; sourceTree = "<group>"; };
+		B9EA1FEE1C84E23F00562C58 /* Home.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		B9EA1FF01C84E4C000562C58 /* HomeHunterTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeHunterTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +104,14 @@
 			isa = PBXGroup;
 			children = (
 				B9EA1FBC1C84AD2000562C58 /* AppDelegate.swift */,
-				B9EA1FBE1C84AD2000562C58 /* ViewController.swift */,
 				B9EA1FC01C84AD2000562C58 /* Main.storyboard */,
 				B9EA1FC31C84AD2000562C58 /* Assets.xcassets */,
 				B9EA1FC51C84AD2000562C58 /* LaunchScreen.storyboard */,
 				B9EA1FC81C84AD2000562C58 /* Info.plist */,
+				B9EA1FEC1C84E10200562C58 /* HomeDetailTableViewController.swift */,
+				B9EA1FEE1C84E23F00562C58 /* Home.swift */,
+				B9EA1FF01C84E4C000562C58 /* HomeHunterTableViewController.swift */,
+				B95537D01C8DF522005FE7EC /* MapViewController.swift */,
 			);
 			path = HouseHunter;
 			sourceTree = "<group>";
@@ -256,8 +265,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B9EA1FBF1C84AD2000562C58 /* ViewController.swift in Sources */,
+				B9EA1FF11C84E4C000562C58 /* HomeHunterTableViewController.swift in Sources */,
 				B9EA1FBD1C84AD2000562C58 /* AppDelegate.swift in Sources */,
+				B9EA1FED1C84E10200562C58 /* HomeDetailTableViewController.swift in Sources */,
+				B95537D11C8DF522005FE7EC /* MapViewController.swift in Sources */,
+				B9EA1FEF1C84E23F00562C58 /* Home.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -484,6 +496,7 @@
 				B9EA1FE31C84AD2000562C58 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B9EA1FE41C84AD2000562C58 /* Build configuration list for PBXNativeTarget "HouseHunterTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +505,7 @@
 				B9EA1FE61C84AD2000562C58 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B9EA1FE71C84AD2000562C58 /* Build configuration list for PBXNativeTarget "HouseHunterUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +514,7 @@
 				B9EA1FE91C84AD2000562C58 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
