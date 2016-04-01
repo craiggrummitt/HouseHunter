@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="tsN-hU-QEc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="neZ-ov-iwZ">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
@@ -59,7 +59,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tiu-JB-kky">
-                                                    <rect key="frame" x="8" y="8" width="88" height="20.5"/>
+                                                    <rect key="frame" x="8" y="8" width="88" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="88" id="KnD-z1-Lll"/>
                                                     </constraints>
@@ -93,7 +93,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rating" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xIG-WM-NDD">
-                                                    <rect key="frame" x="8" y="11" width="88" height="20.5"/>
+                                                    <rect key="frame" x="8" y="11" width="88" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="88" id="i37-uT-2Jr"/>
                                                     </constraints>
@@ -104,7 +104,7 @@
                                                 <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="Y0p-cg-A7q">
                                                     <rect key="frame" x="102" y="8" width="492" height="31"/>
                                                     <connections>
-                                                        <action selector="homeChanged:" destination="bET-qE-e6O" eventType="valueChanged" id="tcA-w9-0k0"/>
+                                                        <action selector="homeChanged:" destination="bET-qE-e6O" eventType="valueChanged" id="EO2-gU-eHK"/>
                                                     </connections>
                                                 </slider>
                                             </subviews>
@@ -135,43 +135,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nWd-yw-VON" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4185" y="438"/>
-        </scene>
-        <!--Map-->
-        <scene sceneID="EJ7-xV-6Q8">
-            <objects>
-                <viewController id="vsC-9W-uiu" customClass="MapViewController" customModule="HouseHunter" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="S7h-cx-BTW"/>
-                        <viewControllerLayoutGuide type="bottom" id="QSr-vp-8z6"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="9XT-AO-6C7">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="vxD-Lc-rBm">
-                                <rect key="frame" x="0.0" y="64" width="600" height="487"/>
-                                <connections>
-                                    <outlet property="delegate" destination="vsC-9W-uiu" id="ckA-i2-59K"/>
-                                </connections>
-                            </mapView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="QSr-vp-8z6" firstAttribute="top" secondItem="vxD-Lc-rBm" secondAttribute="bottom" id="AlM-ic-8zK"/>
-                            <constraint firstItem="vxD-Lc-rBm" firstAttribute="top" secondItem="S7h-cx-BTW" secondAttribute="bottom" id="Rcl-zH-Qra"/>
-                            <constraint firstAttribute="trailing" secondItem="vxD-Lc-rBm" secondAttribute="trailing" id="q47-RX-hR3"/>
-                            <constraint firstItem="vxD-Lc-rBm" firstAttribute="leading" secondItem="9XT-AO-6C7" secondAttribute="leading" id="ze4-s5-zmI"/>
-                        </constraints>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Map" image="map" id="CXz-7H-nQd"/>
-                    <connections>
-                        <outlet property="mapView" destination="vxD-Lc-rBm" id="dKj-1S-jjy"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="alu-uG-qSL" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2648" y="1224"/>
+            <point key="canvasLocation" x="4888" y="438"/>
         </scene>
         <!--Home hunter-->
         <scene sceneID="N64-xZ-Z7u">
@@ -206,7 +170,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="bET-qE-e6O" kind="show" identifier="editSegue" id="BQD-o2-qEx"/>
+                                    <segue destination="bET-qE-e6O" kind="show" identifier="editSegue" id="4DB-9o-FC8"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -216,58 +180,34 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Home hunter" id="KdN-mN-O9B">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="2Cy-d1-4z4">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="K1f-9U-5Cu">
                             <connections>
-                                <action selector="createHome:" destination="Lvz-85-M9M" id="hNZ-G7-CU4"/>
+                                <action selector="createHome:" destination="Lvz-85-M9M" id="zKu-Ih-1mZ"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kDE-dT-hhH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3392" y="438"/>
+            <point key="canvasLocation" x="4204" y="438"/>
         </scene>
-        <!--Tab Bar Controller-->
-        <scene sceneID="eBB-uN-IbF">
+        <!--Navigation Controller-->
+        <scene sceneID="9pa-EQ-kpO">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="tsN-hU-QEc" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="neZ-ov-iwZ" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="bPl-Ck-29I"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="UpK-HD-QDt">
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="dZA-rV-gip" kind="relationship" relationship="viewControllers" id="Z0d-0b-CNo"/>
-                        <segue destination="vsC-9W-uiu" kind="relationship" relationship="viewControllers" id="vnA-s8-YyV"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="paF-YY-Icx" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1836" y="438"/>
-        </scene>
-        <!--Houses-->
-        <scene sceneID="TsX-cn-HUs">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dZA-rV-gip" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Houses" image="cottage_filled" id="z3k-kZ-ZJ5"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="lBg-lF-csR">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Kht-Nq-Oly">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="Lvz-85-M9M" kind="relationship" relationship="rootViewController" id="mvJ-j0-UX6"/>
+                        <segue destination="Lvz-85-M9M" kind="relationship" relationship="rootViewController" id="Kfk-7n-4hE"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="iaD-Du-Jzv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="scc-kq-g4o" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2626" y="438"/>
+            <point key="canvasLocation" x="3392" y="438"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="cottage_filled" width="25" height="25"/>
-        <image name="map" width="25" height="25"/>
-    </resources>
 </document>

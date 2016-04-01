@@ -16,8 +16,6 @@ class HomeDetailTableViewController: UITableViewController {
     @IBOutlet weak var addressTextField: UITextField!
     @IBOutlet weak var ratingSlider: UISlider!
     
-    
-    
     var home:Home?
     
     override func viewDidLoad() {
@@ -27,7 +25,6 @@ class HomeDetailTableViewController: UITableViewController {
             addressTextField.text = home.address
             ratingSlider.value = home.rating
         }
-        
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
