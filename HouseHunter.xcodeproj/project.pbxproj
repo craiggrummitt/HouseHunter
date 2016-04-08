@@ -16,6 +16,7 @@
 		B9EA1FD21C84AD2000562C58 /* HouseHunterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EA1FD11C84AD2000562C58 /* HouseHunterTests.swift */; };
 		B9EA1FDD1C84AD2000562C58 /* HouseHunterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EA1FDC1C84AD2000562C58 /* HouseHunterUITests.swift */; };
 		B9EA1FED1C84E10200562C58 /* HomeDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EA1FEC1C84E10200562C58 /* HomeDetailTableViewController.swift */; };
+		B9ED434B1CB810B500DA352A /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9ED434A1CB810B500DA352A /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		B9EA1FDC1C84AD2000562C58 /* HouseHunterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseHunterUITests.swift; sourceTree = "<group>"; };
 		B9EA1FDE1C84AD2000562C58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B9EA1FEC1C84E10200562C58 /* HomeDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeDetailTableViewController.swift; sourceTree = "<group>"; };
+		B9ED434A1CB810B500DA352A /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				B9EA1FEC1C84E10200562C58 /* HomeDetailTableViewController.swift */,
 				B95537D21C8E3DEF005FE7EC /* HomeHunterTableViewController.swift */,
 				B95537D41C8E3E33005FE7EC /* Home.swift */,
+				B9ED434A1CB810B500DA352A /* MapViewController.swift */,
 			);
 			path = HouseHunter;
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 				B9EA1FBD1C84AD2000562C58 /* AppDelegate.swift in Sources */,
 				B9EA1FED1C84E10200562C58 /* HomeDetailTableViewController.swift in Sources */,
 				B95537D51C8E3E33005FE7EC /* Home.swift in Sources */,
+				B9ED434B1CB810B500DA352A /* MapViewController.swift in Sources */,
 				B95537D31C8E3DEF005FE7EC /* HomeHunterTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

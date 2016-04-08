@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="neZ-ov-iwZ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="bKR-Zp-HJZ">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -135,7 +135,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nWd-yw-VON" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4888" y="438"/>
+            <point key="canvasLocation" x="5690" y="1078"/>
         </scene>
         <!--Home hunter-->
         <scene sceneID="N64-xZ-Z7u">
@@ -189,12 +189,49 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kDE-dT-hhH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4204" y="438"/>
+            <point key="canvasLocation" x="5016" y="438"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Map-->
+        <scene sceneID="jGB-aI-3Sz">
+            <objects>
+                <viewController id="K80-Tz-vme" customClass="MapViewController" customModule="HouseHunter" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZD0-4B-YQH"/>
+                        <viewControllerLayoutGuide type="bottom" id="qOO-qU-Fu6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sEL-JT-rvF">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="noh-8Q-EvI">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
+                                <connections>
+                                    <outlet property="delegate" destination="K80-Tz-vme" id="nxo-s5-T7i"/>
+                                </connections>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qOO-qU-Fu6" firstAttribute="top" secondItem="noh-8Q-EvI" secondAttribute="bottom" id="2te-VM-mM2"/>
+                            <constraint firstItem="noh-8Q-EvI" firstAttribute="top" secondItem="sEL-JT-rvF" secondAttribute="top" id="47F-XC-HEW"/>
+                            <constraint firstAttribute="trailing" secondItem="noh-8Q-EvI" secondAttribute="trailing" id="sJ8-NV-mab"/>
+                            <constraint firstItem="noh-8Q-EvI" firstAttribute="leading" secondItem="sEL-JT-rvF" secondAttribute="leading" id="vKd-gN-V2M"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Map" image="map" id="vFq-4w-zvc"/>
+                    <connections>
+                        <outlet property="mapView" destination="noh-8Q-EvI" id="qyp-mT-iJq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EBU-tV-uTv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4156" y="1216"/>
+        </scene>
+        <!--Homes-->
         <scene sceneID="9pa-EQ-kpO">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="neZ-ov-iwZ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Homes" image="cottage_filled" id="RNj-eW-K9T"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Kht-Nq-Oly">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -207,7 +244,29 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="scc-kq-g4o" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="4204" y="438"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="49k-J5-vmG">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="bKR-Zp-HJZ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="rKG-KM-k6Z">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="neZ-ov-iwZ" kind="relationship" relationship="viewControllers" id="d0w-Mn-a8R"/>
+                        <segue destination="K80-Tz-vme" kind="relationship" relationship="viewControllers" id="dXA-Zq-n3e"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z3K-d7-pzS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
             <point key="canvasLocation" x="3392" y="438"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="cottage_filled" width="25" height="25"/>
+        <image name="map" width="25" height="25"/>
+    </resources>
 </document>
